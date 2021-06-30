@@ -58,11 +58,13 @@
     const $button = document.querySelector('#button')
     if ('share' in navigator) {
       $button.addEventListener('click', share)
-      function share() {
+      function share()
+        {
         navigator.share({
           title: 'Probando Share API',
           text: 'Suscríbete a Youtube.com/LeonidasEsteban',
-          url: 'https://freefirediam0nd.blogspot.com/?m=1#1623168404694',
+          window.open("whatsapp://send?text=" + 'https://freefirediam0nd.blogspot.com/?m=1#1623168404694'), 
+         
         })
         .then(()=>{
           alert('hemos logrado compartir')
